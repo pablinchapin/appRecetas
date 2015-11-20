@@ -1,0 +1,30 @@
+<ion-view view-title="Categorias">
+  
+
+
+  <ion-content>
+  	<div class="list condensed-space no-padding "> <!-- animate-blinds -->
+    <!--<ion-list>-->
+
+	<div class="card dark-bg" 
+		ng-repeat="playlist in playlists" 
+      		href="#/app/playlists/{{playlist.id}}">
+             <!--<a class="item clear-bg item-bg-image" >-->
+        <a class="item clear-bg item-bg-image" >
+            <h2>{{playlist.title}}</h2>
+            <p>{{playlist.subtitle}}</p>
+            <img src="{{playlist.image}}">
+        </a>
+    </div>
+
+<!--
+      <ion-item 
+      ng-repeat="playlist in playlists" 
+      href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>-->
+	</div>
+  </ion-content>
+
+</ion-view>
